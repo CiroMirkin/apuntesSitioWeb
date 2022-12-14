@@ -94,7 +94,7 @@ const createNoteHTML = ({ noteName, noteUrl }) => {
         <!--<img src="./src/pictures/chevron-right.svg" class="list__item-icon">-->
         <a href="${noteUrl}" class="" target="_blank" title="El enlace te llavara a Github">${noteName}</a>
     `
-	
+
     return noteElement
 }
 
