@@ -3,43 +3,6 @@
     --white: #f2f7f5;
 	--stroke: #00332c;
 }
-body.dark {
-    --black : #e2dcd3;
-    --white: #f2f7f5;
-}
 body {
-	font-family: 'Inconsolata', monospace;
-	display: flex;
-	justify-content: center;
-	background: #00473e;
-}
-main {
-	min-width: 80vw;
-	margin: 5vh 0 0;
-	text-align: center;
-}
-main header {
-	font-size: 3ch;
-	font-weight: 700;
-	color: var(--white);
-}
-main .list {
-	width: 100%;
-	padding: 15px;
-	list-style: none;
-	border: 1.5px var(--black) solid;
-	background-color: var(--white);
-}
-.list li {
-	margin: 10px 0;
-	text-align: left;
-}
-.list li a {
-	font-size: 2.2ch;
-	font-weight: 600;
-	text-decoration: none;
-	color: var(--stroke);
-}
-.list li a:hover {
-	text-decoration: underline;
+	background: var(--white) !important;
 }

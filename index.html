@@ -9,6 +9,8 @@
 
     <title>Apuntes - C.Mirkin</title>
 	
+    <link rel="stylesheet" href="./src/css/styles.css">
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;700;900&display=swap" rel="stylesheet"> 
@@ -21,13 +23,17 @@
 
 </head>
 <body>
-    <div>
-	<main>
-        <header>Apuntes (<span id="noteCount"></span>):</header>
-        <ul class="list" id="note-list"> </ul>
+     
+    <div class="alert alert-success alert-dismissible fade show m-4" role="alert">
+        Cada enlace te llavara al respectivo apunte en Github, para esto se abrira una nueva pestaña.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+	<main class="container-xl">
+        <header class="fs-4 font-monospace mb-3 mt-4">Apuntes (<span id="noteCount" class="fw-bold"></span>):</header>
+        <div class="list-group" id="note-list"> </div>
     </main>
 	<footer class="footer"></footer>
-	</div>
+
 
     <script src="./index.js"></script>
     <!-- JavaScript Bundle with Popper -->

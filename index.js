@@ -88,12 +88,12 @@ const createNoteDatesList = () => {
 }
 
 const createNoteHTML = ({ noteName, noteUrl }) => {
-    const noteElement = document.createElement('Li')
-    noteElement.classList.add('list__item')
-    noteElement.innerHTML = `
-        <!--<img src="./src/pictures/chevron-right.svg" class="list__item-icon">-->
-        <a href="${noteUrl}" class="" target="_blank" title="El enlace te llavara a Github">${noteName}</a>
-    `
+    const noteElement = document.createElement('A')
+    noteElement.classList.add('list-group-item', 'list-group-item-action')
+	noteElement.setAttribute('href', noteUrl)
+	noteElement.setAttribute('target', "_blank")
+	noteElement.setAttribute('title', "El enlace te llavara a Github")
+    noteElement.innerText = noteName
 
     return noteElement
 }
